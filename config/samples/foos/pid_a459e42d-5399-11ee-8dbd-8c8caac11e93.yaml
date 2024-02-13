@@ -1,0 +1,38 @@
+apiVersion: mygroup.example.com/v1alpha1
+kind: Foo
+metadata:
+  labels:
+    app.kubernetes.io/name: foo
+    app.kubernetes.io/instance: foo-sample
+    app.kubernetes.io/part-of: external-indexing
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: external-indexing
+  name: foo-1
+spec:
+  pid: a459e42d-5399-11ee-8dbd-8c8caac11e93
+---
+apiVersion: mygroup.example.com/v1alpha1
+kind: Foo
+metadata:
+  labels:
+    app.kubernetes.io/name: foo
+    app.kubernetes.io/instance: foo-sample
+    app.kubernetes.io/part-of: external-indexing
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: external-indexing
+  name: foo-2
+spec:
+  pid: a459e42d-5399-11ee-8dbd-8c8caac11e93
+---
+apiVersion: mygroup.example.com/v1alpha1
+kind: Foo
+metadata:
+  labels:
+    app.kubernetes.io/name: foo
+    app.kubernetes.io/instance: foo-sample
+    app.kubernetes.io/part-of: external-indexing
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: external-indexing
+  name: foo-3
+spec:
+  pid: a459e42d-5399-11ee-8dbd-8c8caac11e93
